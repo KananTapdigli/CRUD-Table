@@ -1,0 +1,296 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.wrapper {
+    width: 800px;
+    height: auto;
+}
+
+.content {
+    height: auto;
+}
+
+.contentTop {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.addButton {
+    width: 142px;
+    height: 34px;
+    border: none;
+    background-color: #5cb85c;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: .3s all linear;
+    outline: none;
+}
+
+.addButton:hover {
+    background-color: #449d44;
+}
+
+.plusIcon {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.searchText {
+    font-size: 14px;
+    color: #484848;
+}
+
+.searchInput {
+    height: 30px;
+    width: 182px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.thName {
+    width: 106px;
+    height: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+}
+
+.thCountry {
+    width: 103px;
+    height: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+}
+
+.thSalary {
+    width: 87px;
+    height: 27px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+
+.thEmail {
+    width: 262px;
+    height: 27px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.trth {
+    border-bottom: 2px solid #ddd;
+}
+
+.tdName,
+.tdCountry,
+.tdSalary,
+.tdEmail,.tdSalaryTotal {
+    text-align: center;
+    height: 36px;
+    color: #484848;
+    font-size: 14px;
+}
+
+
+.tdEdit {
+    width: 125px;
+    height: 36px;
+}
+
+.tdDelete {
+    width: 117px;
+    height: 36px;
+}
+
+.editButton {
+    width: 50px;
+    height: 34px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s all linear;
+    outline: none;
+}
+
+.editButton:hover {
+    background-color: #286090;
+}
+
+.deleteButton {
+    width: 66px;
+    height: 34px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: .3s all linear;
+    outline: none;
+}
+
+.deleteButton:hover {
+    background-color: #c9302c;
+}
+
+.contentBottom {
+    width: 248px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.total {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.addTitle {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.nameTitle {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.inputsInAdd {
+    width: 790px;
+    height: 34px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    margin: 6px 0;
+    padding-left: 10px;
+    outline: none;
+    transition: .5s;
+}
+
+.numberInput {
+    width: 780px;
+    padding-right: 10px;
+}
+
+
+.saveChangeBtn {
+    display: inline-block;
+    text-align: center;
+    width: 132px;
+    height: 34px;
+    color: white;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: not-allowed;
+    opacity: .65;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.saveChangeBtnEdit{
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    text-align: center;
+    width: 132px;
+    height: 34px;
+    color: white;
+    background-color: #337ab7;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+.pencil {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.cancelBtn {
+    position: absolute;
+    left: 140px;
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+    height: 26px;
+    color: white;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding-top: 8px;
+}
+
+.addUser {
+    position: relative;
+    display: none;
+}
+
+.formAlert {
+    display: none;
+    align-items: center;
+    width: 785px;
+    height: 52px;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    color: #a94442;
+    font-size: 14px;
+}
+
+.formAlertSpecial,.formAlertSpecial2{
+    display: none;
+    align-items: center;
+    width: 785px;
+    height: 52px;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    color: #a94442;
+    font-size: 14px;
+}

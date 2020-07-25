@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75185dff02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD Table</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="content">
+                <div class="contentTop">
+                    <div class="contentTopLeft"><button class="addButton"><span class="plusIcon">+</span><span
+                                class="buttonText"> Add more user</span></button></div>
+                    <div class="contentTopRight"><span class="searchText">Search by name: </span><input type="text"
+                            placeholder="Type name to search" class="searchInput"></div>
+                </div>
+                <div class="contentCenter">
+                    <table class="table">
+                        <tbody>
+                            <tr class="trth">
+                                <th class="thName">Name</th>
+                                <th class="thCountry">Country</th>
+                                <th class="thSalary">Salary</th>
+                                <th class="thEmail">Email</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr class="tr">
+                                <td class="tdName">Carl</td>
+                                <td class="tdCountry">Sweden</td>
+                                <td class="tdSalary">24</td>
+                                <td class="tdEmail">cluphetret@hotmail.com</td>
+                                <td class="tdEdit"><button class="editButton">Edit</button></td>
+                                <td class="tdDelete"><button class="deleteButton">Delete</button></td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="tdName">Hege</td>
+                                <td class="tdCountry">Norway</td>
+                                <td class="tdSalary">15</td>
+                                <td class="tdEmail">thapripich@gmail.com</td>
+                                <td class="tdEdit"><button class="editButton">Edit</button></td>
+                                <td class="tdDelete"><button class="deleteButton">Delete</button></td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="tdName">Jani</td>
+                                <td class="tdCountry">Norway</td>
+                                <td class="tdSalary">5</td>
+                                <td class="tdEmail">Guithay65@gustr.com</td>
+                                <td class="tdEdit"><button class="editButton">Edit</button></td>
+                                <td class="tdDelete"><button class="deleteButton">Delete</button></td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="tdName">Joe</td>
+                                <td class="tdCountry">Denmark</td>
+                                <td class="tdSalary">20</td>
+                                <td class="tdEmail">qakyssaxisu-3687@yopmail.com</td>
+                                <td class="tdEdit"><button class="editButton">Edit</button></td>
+                                <td class="tdDelete"><button class="deleteButton">Delete</button></td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="tdName">Margareth</td>
+                                <td class="tdCountry">England</td>
+                                <td class="tdSalary">5</td>
+                                <td class="tdEmail">phitrudreh@yahoo.com</td>
+                                <td class="tdEdit"><button class="editButton">Edit</button></td>
+                                <td class="tdDelete"><button class="deleteButton">Delete</button></td>
+                            </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div class="contentBottom"><span class="total">Total</span><span class="tdSalaryTotal"></span></div>
+            </div>
+            <form class="addUser">
+                <p class="addTitle">Add User</p>
+                <p class="nameTitle">Name</p>
+                <input type="text" name="" id="" placeholder="Edit name" class="inputsInAdd">
+                <div class="formAlert">Please input name</div>
+                <p class="nameTitle">Country</p>
+                <input type="text" name="" id="" placeholder="Edit country" class="inputsInAdd">
+                <div class="formAlert">Please input user country</div>
+                <p class="nameTitle">Salary</p>
+                <input type="number" min='0' name="" id="" placeholder="Edit salary" class="inputsInAdd numberInput">
+                <div class="formAlert">Please input salary</div>
+                <div class="formAlertSpecial">Please input salary greater than 0</div>
+                <p class="nameTitle">Email</p>
+                <input type="email" name="" id="" placeholder="Edit email" class="inputsInAdd email">
+                <div class="formAlert">Please input valid email</div>
+                <div class="formAlertSpecial2">This email has been registered by other user</div>
+                <button type="button" class="saveChangeBtn" disabled><i class="fas fa-pencil-alt pencil"></i><span>Save change</span></button>
+                <button type="button" class="saveChangeBtnEdit"><i class="fas fa-pencil-alt pencil"></i><span>Save change</span>
+                </button>
+                <submit class="cancelBtn"><span>Cancel</span></submit>
+            </form>
+        </div>
+    </div>
+
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
